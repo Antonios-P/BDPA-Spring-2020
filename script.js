@@ -23,30 +23,36 @@ for(var i = 0; i < questions.length; i++) { //cycles through asking all the ques
         if(score >= 8) {
             var aiResponse = "Good Job! You did very well in this trivia game. Go brag to your friends!";
             alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
+            break;
         }
         
         else if(score <= 7 && score >= 5) {
             var aiResponse = "You did pretty good. You just need some minor touchups in studying to get a better score.";
             alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
+            break;
         }
 
         else if(score <= 5 && score >= 3) {
             var aiResponse = "You didn't do so good. I wouldn't suggest bragging to your friends.";
             alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
+            break;
         }
 
         else if(score <= 3 && score >= 1){
             var aiResponse = "You did REALLY bad. Like...BAD. Don't show your friends.";
             alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
+            break;
         }
 
         else if(score <= 1) {
             var aiResponse = "Just stop. Ok? Get out. Have you been living under a rock? You shouldn't even be here right now. Definitely DON'T show your friends...unless it's too late.";
             alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
+            break;
         }
 
         else {
             var aiResponse = "";
+            break;
         }
     }
 }
