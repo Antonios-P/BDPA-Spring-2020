@@ -1,7 +1,7 @@
 var questions = [
     {
-        prompt: "", // <= question inside quotes including the choices a, b, c, d, etc.
-        answer: "", // answer inside quotes. a, b, c, d, etc. notice how the comma is used to separate the objects.
+        prompt: "test question", // <= question inside quotes including the choices a, b, c, d, etc.
+        answer: "a", // answer inside quotes. a, b, c, d, etc. notice how the comma is used to separate the objects.
     }, //repeat for the rest of the questions. make sure you put the questions within the array.
 ];
 
@@ -24,20 +24,24 @@ for(var i = 0; i < questions.length; i++) { //cycles through asking all the ques
             var aiResponse = "Good Job! You did very well in this trivia game. Go brag to your friends!";
         }
         
-        if(score < 7) {
+        else if(score < 7) {
             var aiResponse = "You did pretty good. You just need some minor touchups in studying to get a better score.";
         }
 
-        if(score < 5) {
+        else if(score < 5) {
             var aiResponse = "You didn't do so good. I wouldn't suggest bragging to your friends.";
         }
 
-        if(score < 3){
+        else if(score < 3){
             var aiResponse = "You did REALLY bad. Like...BAD. Don't show your friends.";
         }
 
-        if(score < 1) {
+        else if(score < 1) {
             var aiResponse = "Just stop. Ok? Get out. Have you been living under a rock? You shouldn't even be here right now. Definitely DON'T show your friends...unless it's too late.";
+        }
+
+        else {
+            var aiResponse = "";
         }
     }
 }
