@@ -47,7 +47,6 @@ for(var i = 0; i < questions.length; i++) { //cycles through asking all the ques
 
         else {
             var aiResponse = "";
-            alert("You got " + score +"/" + questions.length + " questions right. " + aiResponse);
         }
     }
 }
