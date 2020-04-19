@@ -25,17 +25,17 @@ for(var i = 0; i < questions.length; i++) { //cycles through asking all the ques
             break;
         }
         
-        else if(score <= 7 && score >= 5) {
+        else if(score <= 7 && score > 5) {
             var aiResponse = "You did pretty good. You just need some minor touchups in studying to get a better score.";
             break;
         }
 
-        else if(score <= 5 && score >= 3) {
+        else if(score <= 5 && score > 3) {
             var aiResponse = "You didn't do so good. I wouldn't suggest bragging to your friends.";
             break;
         }
 
-        else if(score <= 3 && score >= 1){
+        else if(score <= 3 && score > 1){
             var aiResponse = "You did REALLY bad. Like...BAD. Don't show your friends.";
             break;
         }
