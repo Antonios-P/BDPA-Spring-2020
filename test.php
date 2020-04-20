@@ -1,6 +1,6 @@
-<?php 
 
-echo '<body>
+
+<body>
 <div>test timer runs out in <span id="time">00:30</span> minutes!</div>
     <form method="GET">
         Response: <input type="text" name="response">
@@ -8,6 +8,5 @@ echo '<body>
     </form>
                     
 </body>
-<script src="game.js"></script>';
+<script src="game.js"></script>
 
-?>
