@@ -1,9 +1,13 @@
-<body>
-    <div>test timer runs out in <span id="time">00:30</span> minutes!</div>
+<?php 
+
+echo '<body>
+<div>test timer runs out in <span id="time">00:30</span> minutes!</div>
     <form method="GET">
         Response: <input type="text" name="response">
         <button type="submit" class="btn btn-primary" value="submit">Submit Answer</button>
     </form>
-    
+                    
 </body>
-<script src="game.js"></script>
+<script src="game.js"></script>';
+
+?>
