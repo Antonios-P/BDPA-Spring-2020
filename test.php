@@ -8,6 +8,8 @@
 
     //or maybe split it up into different pages
 
+    //or split into pages and use include to put them into a switch statement 
+
     //create something that will generate question/answer ids with a game 
 
     //link those ids to the bank of questions/answers
@@ -28,6 +30,24 @@
 
     //MAYBE a way to kick players
 
-    
+    /* 
+
+    create a game
+
+        sql AI for game id
+
+        game code random generated 
+
+        current time for time started
+
+    game answers
+
+        connect game id with the one above
+
+        im not too sure on how to generate the question id/answer thing
+
+        connect question id question bank/same with answerid
+
+    */
 
 ?>
