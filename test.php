@@ -50,4 +50,18 @@
 
     */
 
+    $datasource = 'mysql:host=localhost;dbname=team2_trivia';
+    
+    $dusername = 'team2_2';
+    
+    $dpassword = 'TPH5zOSt]&oY';
+            
+    $pdo = new PDO($datasource, $dusername, $dpassword);
+
+    $test = "INSERT INTO Games (GameCode) VALUES (63819)"
+
+    $statement = $pdo->prepare($test);
+        
+    $statement -> execute();
+
 ?>
