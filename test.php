@@ -49,8 +49,6 @@
         connect question id question bank/same with answerid
 
     */
-    
-    echo 'hello';
 
     $datasource = 'mysql:host=localhost;dbname=team2_trivia';
     
@@ -60,12 +58,12 @@
             
     $pdo = new PDO($datasource, $dusername, $dpassword);
 
-    $insert = "INSERT INTO `Games` (`GameCode`) VALUES ('63815')";
+    $gamecode = uniqid();
+
+    $insert = "INSERT INTO `Games` (`GameCode`) VALUES ('$gamecode')";
 
     $statement = $pdo -> prepare($insert);
                 
     $statement -> execute();
-    
-    echo 'hello';
 
 ?>
