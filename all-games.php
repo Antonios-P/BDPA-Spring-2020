@@ -2,8 +2,8 @@
 
 require 'db.php';
 
-$query = "SELECT * FROM Games";
-$query = $db->prepare($query);
+$result = "SELECT * FROM Games";
+$result = $db->prepare($query);
  
 if ($result = $db->execute()) {
  
