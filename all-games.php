@@ -3,7 +3,7 @@
 require 'db.php';
 
 $result = "SELECT * FROM Games";
-$statement = $db->prepare($query);
+$statement = $db->prepare($result);
 $statement->execute();
 
 echo '<table align="center" width=auto border="0" cellspacing="2" cellpadding="2"> 
