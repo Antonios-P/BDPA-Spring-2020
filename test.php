@@ -57,7 +57,7 @@
     $dpassword = 'TPH5zOSt]&oY';
             
     $pdo = new PDO($datasource, $dusername, $dpassword);
-
+    
     $gamecode = uniqid();
 
     $insert = "INSERT INTO `Games` (`GameCode`) VALUES ('$gamecode')";
@@ -65,5 +65,41 @@
     $statement = $pdo -> prepare($insert);
                 
     $statement -> execute();
+    
+    $query = "SELECT `GameId` FROM `Games` WHERE `GameCode` = '$gamecode'";
+    
+    $statement1 = $pdo -> prepare($query);
+                
+    $statement1 -> execute();
+    
+    $gameidhold = $statement1 -> fetch(PDO::FETCH_ASSOC);
+        
+    $gameid = $gameidhold["GameId"];
+
+    $questionid = [];
+
+    $numberofquestions = 5;
+
+    for ($i = 1; $i <= $numberofquestions; $i++){
+
+        array_push($questionid, $i);
+
+    };
+    
+    foreach ($questionid as $row) {
+        
+        echo $row;
+        
+        $hold = $questionid[$row];
+        
+        $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId) VALUES ('". $gameid ."', '". $hold ."')";
+        
+        $statement2 = $pdo -> prepare($query1);
+                
+        $statement2 -> execute();
+        
+    }
+    
+    print_r($questionid);
 
 ?>
