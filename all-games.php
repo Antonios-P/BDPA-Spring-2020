@@ -1,6 +1,6 @@
 <?php 
 
-require 'db.php';
+require 'depends/db.php';
 
 $result = "SELECT * FROM Games";
 $statement = $db->prepare($result);

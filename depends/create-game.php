@@ -50,7 +50,7 @@
 
     */
 
-    require 'db.php';
+    require 'depends/db.php';
     
     $gamecode = uniqid();
 
