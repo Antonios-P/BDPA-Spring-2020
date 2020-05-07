@@ -17,6 +17,10 @@
   background: #269e01;
 }
 
+.button-green:active {
+  background: #1e8001;
+}
+
 .button-red {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -34,6 +38,10 @@
 
 .button-red:hover {
   background: #8f0000;
+}
+
+.button-red:active {
+  background: #6e0101;
 }
 
 .button-blue {
@@ -55,6 +63,10 @@
   background: rgb(52, 93, 143);
 }
 
+.button-blue:active {
+  background: rgb(38, 68, 105);
+}
+
 .button-grey {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -72,6 +84,10 @@
 
 .button-grey:hover {
   background: rgb(94, 94, 94);
+}
+
+.button-grey:active {
+  background: rgb(65, 64, 64);
 }
 
 input[type=text], select {
@@ -99,9 +115,29 @@ input[type=text], select {
     background-color: #32c9c4;
   }
   
-  div {
+  .divForm {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+
+  .parallax {
+    /* The image used (kapoop! :) ) */
+    background-image: url("kapoop!.png");
+  
+    /* Set a specific height that matches image height */
+    min-height: 317px; 
+  
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body {
+    background-image: url("kapoop!.png");
+    background-position: center;
+    background-size: auto;
   }
 
