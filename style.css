@@ -99,9 +99,23 @@ input[type=text], select {
     background-color: #32c9c4;
   }
   
-  div {
+  .divForm {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+
+  .parallax {
+    /* The image used (kapoop! :) ) */
+    background-image: url("kapoop!.png");
+  
+    /* Set a specific height that matches image height */
+    min-height: 317px; 
+  
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
