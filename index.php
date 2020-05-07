@@ -9,7 +9,7 @@
         <br>
 
         <a href="all-games.php">Browse All Games</a>
-        <a href="create-game.php">Create a Game</a>
+        <a href="depends/create-game.php">Create a Game</a>
     </div>
 </body>
 
