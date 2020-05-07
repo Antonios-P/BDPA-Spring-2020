@@ -50,25 +50,19 @@
 
     */
 
-    $datasource = 'mysql:host=localhost;dbname=team2_trivia';
-    
-    $dusername = 'team2_2';
-    
-    $dpassword = 'TPH5zOSt]&oY';
-            
-    $pdo = new PDO($datasource, $dusername, $dpassword);
+    require 'db.php';
     
     $gamecode = uniqid();
 
     $insert = "INSERT INTO `Games` (`GameCode`) VALUES ('$gamecode')";
 
-    $statement = $pdo -> prepare($insert);
+    $statement = $db -> prepare($insert);
                 
     $statement -> execute();
     
     $query = "SELECT `GameId` FROM `Games` WHERE `GameCode` = '$gamecode'";
     
-    $statement1 = $pdo -> prepare($query);
+    $statement1 = $db -> prepare($query);
                 
     $statement1 -> execute();
     
