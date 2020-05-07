@@ -1,3 +1,5 @@
+<?php require 'header.php'; ?>
+
 <body>
     <div>
         Welcome to Kapoop! Please use the navigation  bar to travel to different parts of our website or use the buttons below. Enjoy your stay!
@@ -10,3 +12,5 @@
         <a href="create-game.php">Create a Game</a>
     </div>
 </body>
+
+<?php require 'footer.php'; ?>
