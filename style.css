@@ -119,3 +119,9 @@ input[type=text], select {
     background-attachment: fixed;
   }
 
+  body {
+    background-image: url("kapoop!.png");
+    background-position: center;
+    background-size: auto;
+  }
+
