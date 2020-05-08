@@ -1,108 +1,108 @@
 .button-green {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #2ec700;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: #2ec700;
-    color: #FFF;
-    padding: 8px 12px;
-    text-decoration: none;
-}
-
-.button-green:hover {
-  background: #269e01;
-}
-
-.button-green:active {
-  background: #1e8001;
-}
-
-.button-red {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #c70000;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: #c70000;
-    color: #FFF;
-    padding: 8px 12px;
-    text-decoration: none;
-}
-
-.button-red:hover {
-  background: #8f0000;
-}
-
-.button-red:active {
-  background: #6e0101;
-}
-
-.button-blue {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #4479BA;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: #4479BA;
-    color: #FFF;
-    padding: 8px 12px;
-    text-decoration: none;
-}
-
-.button-blue:hover {
-  background: rgb(52, 93, 143);
-}
-
-.button-blue:active {
-  background: rgb(38, 68, 105);
-}
-
-.button-grey {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px gray;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: gray;
-    color: #FFF;
-    padding: 8px 12px;
-    text-decoration: none;
-}
-
-.button-grey:hover {
-  background: rgb(94, 94, 94);
-}
-
-.button-grey:active {
-  background: rgb(65, 64, 64);
-}
-
-.button-purple {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: solid 1px #c961f2;
+  border: solid 1px #2ec700;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: #c961f2;
+  background: #2ec700;
   color: #FFF;
   padding: 8px 12px;
   text-decoration: none;
+}
+
+.button-green:hover {
+background: #269e01;
+}
+
+.button-green:active {
+background: #1e8001;
+}
+
+.button-red {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #c70000;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #c70000;
+  color: #FFF;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.button-red:hover {
+background: #8f0000;
+}
+
+.button-red:active {
+background: #6e0101;
+}
+
+.button-blue {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #4479BA;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #4479BA;
+  color: #FFF;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.button-blue:hover {
+background: rgb(52, 93, 143);
+}
+
+.button-blue:active {
+background: rgb(38, 68, 105);
+}
+
+.button-grey {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px gray;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: gray;
+  color: #FFF;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.button-grey:hover {
+background: rgb(94, 94, 94);
+}
+
+.button-grey:active {
+background: rgb(65, 64, 64);
+}
+
+.button-purple {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border: solid 1px #c961f2;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+background: #c961f2;
+color: #FFF;
+padding: 8px 12px;
+text-decoration: none;
 }
 
 .button-purple:hover {
@@ -114,63 +114,86 @@ background: #75388d;
 }
 
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #c961f2;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #9b4bbb;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  input[type=submit]:active {
-    background-color: #75388d;
-  }
-  
-  .divForm {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+input[type=submit] {
+  width: 100%;
+  background-color: #c961f2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  .parallax {
-    /* The image used (kapoop! :) ) */
-    background-image: url("kapoop!.png");
-  
-    /* Set a specific height that matches image height */
-    min-height: 317px; 
-  
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+input[type=submit]:hover {
+  background-color: #9b4bbb;
+}
 
-  body {
-    background-image: url("depends/kapoop!.png");
-    background-position: center;
-    background-size: auto;
-  }
+input[type=submit]:active {
+  background-color: #75388d;
+}
 
-  /* Modify the background color for navbar */ 
-  .navbar-purple { 
-	  background-color: lightgreen; 
-  } 
+.divForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.parallax {
+  /* The image used (kapoop! :) ) */
+  background-image: url("kapoop!.png");
+
+  /* Set a specific height that matches image height */
+  min-height: 317px; 
+
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  background-image: url("depends/kapoop!.png");
+  background-position: center;
+  background-size: auto;
+}
+
+/* Modify the background color for navbar */ 
+.navbar-purple { 
+  background-color: lightgreen; 
+} 
+
+.games {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+.games td, .games th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.games tr:nth-child(even){background-color: #f2f2f2;}
+
+.games tr:hover {background-color: #ddd;}
+
+.games th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+}
 
 

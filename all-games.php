@@ -9,7 +9,7 @@ $result = "SELECT * FROM Games";
 $statement = $db->prepare($result);
 $statement->execute();
 
-echo '<table align="center" width=auto border="0" cellspacing="2" cellpadding="2"> 
+echo '<table style="color: white;" class="games" align="center" width=auto border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
           <th> <font face="Arial">Game ID</font> </th> 
           <th> <font face="Arial">Game Code</font> </th> 
