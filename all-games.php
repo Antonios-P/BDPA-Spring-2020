@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
 <?php 
 
 require 'depends/db.php';
@@ -8,10 +10,11 @@ $statement->execute();
 
 echo '<table align="center" width=auto border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
-          <td> <font face="Arial">Game ID</font> </td> 
-          <td> <font face="Arial">Game Code</font> </td> 
-          <td> <font face="Arial">Time Started</font> </td> 
-          <td> <font face="Arial">Description</font> </td> 
+          <th> <font face="Arial">Game ID</font> </th> 
+          <th> <font face="Arial">Game Code</font> </th> 
+          <th> <font face="Arial">Time Started</font> </th> 
+          <th> <font face="Arial">Description</font> </th>
+          <th> <font face="Arial"></font> </th> 
       </tr>';
  
     /* fetch associative array */
@@ -26,6 +29,7 @@ echo '<table align="center" width=auto border="0" cellspacing="2" cellpadding="2
                   <td>'.$field2name.'</td> 
                   <td>'.$field3name.'</td> 
                   <td>'.$field4name.'</td> 
+                  <td><a class="button-green">Join Game</a></td>
               </tr>';
 
     }
