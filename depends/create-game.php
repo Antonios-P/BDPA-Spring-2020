@@ -50,7 +50,11 @@
 
     */
 
-    require 'depends/db.php';
+    $username = 'team2_2';
+    
+    $password = 'TPH5zOSt]&oY';
+    
+    $db = new PDO('mysql:host=localhost;dbname=team2_trivia', $username, $password);
     
     $gamecode = uniqid();
 
@@ -59,6 +63,8 @@
     $statement = $db -> prepare($insert);
                 
     $statement -> execute();
+    
+    echo $gamecode;
     
     $query = "SELECT `GameId` FROM `Games` WHERE `GameCode` = '$gamecode'";
     
@@ -69,18 +75,24 @@
     $gameidhold = $statement1 -> fetch(PDO::FETCH_ASSOC);
         
     $gameid = $gameidhold["GameId"];
+    
+    echo '<br />';
+    
+    echo $gameid;
 
-    $questionid = [];
-
-    $numberofquestions = 5; //Will become dynamic later
+    $numberofquestions = 5;
 
     for ($i = 1; $i <= $numberofquestions; $i++){
-
-        array_push($questionid, $i);
+        
+        $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId) VALUES ('". $gameid ."', '". $i ."')";
+        
+        $statement2 = $db -> prepare($query1);
+                
+        $statement2 -> execute();
 
     };
     
-    foreach ($questionid as $row) {
+    /*foreach ($questionid as $row) {
         
         echo $row;
         
@@ -88,11 +100,13 @@
         
         $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId) VALUES ('". $gameid ."', '". $hold ."')";
         
-        $statement2 = $pdo -> prepare($query1);
+        $statement2 = $db -> prepare($query1);
                 
         $statement2 -> execute();
         
-    }
+    }*/
+    
+    echo '<br />';
     
     print_r($questionid);
 
