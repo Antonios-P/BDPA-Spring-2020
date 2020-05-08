@@ -72,7 +72,7 @@
 
     $questionid = [];
 
-    $numberofquestions = 5;
+    $numberofquestions = 5; //Will become dynamic later
 
     for ($i = 1; $i <= $numberofquestions; $i++){
 
