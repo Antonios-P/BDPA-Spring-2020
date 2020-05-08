@@ -13,4 +13,4 @@
     </div>
 </body>
 
-<?php require 'footer.php'; ?>
+<?php require 'depends/footer.php'; ?>
