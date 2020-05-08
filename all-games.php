@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="depends/strobe.js"></script>
 
 <?php 
 
@@ -29,7 +30,12 @@ echo '<table align="center" width=auto border="0" cellspacing="2" cellpadding="2
                   <td>'.$field2name.'</td> 
                   <td>'.$field3name.'</td> 
                   <td>'.$field4name.'</td> 
-                  <td><a class="button-green">Join Game</a></td>
+                  <td>
+                    <form method="GET">
+                    <input type="submit" value="Join Game">
+                    <input type="hidden" value="<?php  $field2name  ?>">
+                    </form>
+                  </td>
               </tr>';
 
     }
