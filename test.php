@@ -102,10 +102,22 @@
 
     //name = POST_whatever_you_named_it_2
 
-    $insert1 = "INSERT INTO `Players`(`Name`) VALUES ('$name')";
+    $insert1 = "INSERT INTO `Players` (`Name`) VALUES ('$name')";
 
     $statement3 = $db -> prepare($insert1);
                 
     $statement3 -> execute();
+
+    $query2 = "SELECT `PlayerId` FROM `Players` WHERE `Name` = '$name'";
+
+    $statement4 = $db -> prepare($query2);
+                
+    $statement4 -> execute();
+
+    $insert2 = "INSERT INTO `GamePlayers (`GameId`, `PlayerId`, `PlayerScore` VALUES ('$gameid', '$playerid', '0')";
+
+    $statement5 = $db -> prepare($insert2);
+                
+    $statement5 -> execute();
 
 ?>
