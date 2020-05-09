@@ -25,6 +25,9 @@
       <li class="nav-item active">
         <a class="nav-link button-purple" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link button-purple" href="https://github.com/Antonios-P/BDPA-Spring-2020.git">Check out our Open Source Code!<span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Games
