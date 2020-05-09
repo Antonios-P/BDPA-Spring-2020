@@ -114,6 +114,10 @@
                 
     $statement4 -> execute();
 
+    $playeridhold = $statement4 -> fetch(PDO::FETCH_ASSOC);
+
+    $playerid = $playeridhold['PlayerId'];
+
     $insert2 = "INSERT INTO `GamePlayers (`GameId`, `PlayerId`, `PlayerScore` VALUES ('$gameid', '$playerid', '0')";
 
     $statement5 = $db -> prepare($insert2);
