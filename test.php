@@ -81,30 +81,24 @@
     echo $gameid;
 
     $numberofquestions = 5;
+    
+    $answerid = 1;
 
     for ($i = 1; $i <= $numberofquestions; $i++){
         
-        $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId) VALUES ('". $gameid ."', '". $i ."')";
+        for ($ii = 1; $ii <= 4; $ii++) {
+            
+            $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId, AnswerId) VALUES ('". $gameid ."', '". $i ."', '". $answerid ."')";
         
-        $statement2 = $db -> prepare($query1);
+            $statement2 = $db -> prepare($query1);
                 
-        $statement2 -> execute();
+            $statement2 -> execute();
+            
+            $answerid++;
+            
+        };
 
     };
-    
-    /*foreach ($questionid as $row) {
-        
-        echo $row;
-        
-        $hold = $questionid[$row];
-        
-        $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId) VALUES ('". $gameid ."', '". $hold ."')";
-        
-        $statement2 = $db -> prepare($query1);
-                
-        $statement2 -> execute();
-        
-    }*/
     
     echo '<br />';
     
