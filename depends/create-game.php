@@ -20,7 +20,7 @@
         
     $gameid = $gameidhold["GameId"];
 
-    $numberofquestions = 2;
+    $numberofquestions = $_GET['numberofquestions'];
     
     $answerid = 1;
 

@@ -3,7 +3,7 @@
 <?php 
 echo '
 <div class="divForm">
-    <form align="center" action="create-game.php" method="POST">
+    <form align="center" action="create-game.php" method="GET">
         What is your name? <br><input type="text" name="dispname"><br>
         How many questions would you like the game to have? <br><input type="text" name="numberofquestions"><br>
         <input class="" type="submit" value="Create Game">
