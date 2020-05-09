@@ -64,7 +64,7 @@
 
     $playerid = $playeridhold['PlayerId'];
 
-    $insert2 = "INSERT INTO `GamePlayers (`GameId`, `PlayerId`, `PlayerScore` VALUES ('$gameid', '$playerid', '0')";
+    $insert2 = "INSERT INTO `GamePlayers` (`GameId`, `PlayerId`, `PlayerScore`) VALUES ('$gameid', '$playerid', '0')";
 
     $statement5 = $db -> prepare($insert2);
                 
@@ -74,6 +74,6 @@
     echo 'Use this Game Code to allow others to join: '.$gamecode.'.';
     echo '<br>';
     echo '<br>';
-    echo 'The number of questions that you have selected is: '.$numberofquestions.'.';
+    echo 'The number of questions that you have selected is: '.$numberofquestions.'and the Display name you choose to use is: '.$name.'.';
 
 ?>
