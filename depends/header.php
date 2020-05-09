@@ -35,7 +35,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Join</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="depends/create-game.php">Create</a>
+          <a class="dropdown-item" href="depends/create-game-form.php">Create</a>
         </div>
       </li>
       <li class="nav-item">
