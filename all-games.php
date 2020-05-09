@@ -13,8 +13,7 @@ echo '<table style="color: white;" class="games" align="center" width=auto borde
       <tr> 
           <th> <font face="Arial">Game ID</font> </th> 
           <th> <font face="Arial">Game Code</font> </th> 
-          <th> <font face="Arial">Time Started</font> </th> 
-          <th> <font face="Arial">Description</font> </th>
+          <th> <font face="Arial">Time Started</font> </th>
           <th> <font face="Arial"></font> </th> 
       </tr>';
  
@@ -23,17 +22,15 @@ echo '<table style="color: white;" class="games" align="center" width=auto borde
         $field1name = $row["GameId"];
         $field2name = $row["GameCode"];
         $field3name = $row["TimeStarted"];
-        $field4name = $row["GameDesc"];
 
         echo '<tr> 
                   <td>'.$field1name.'</td> 
                   <td>'.$field2name.'</td> 
                   <td>'.$field3name.'</td> 
-                  <td>'.$field4name.'</td> 
                   <td>
                     <form method="GET">
                     <input type="submit" value="Join Game">
-                    <input type="hidden" value="<?php  $field2name  ?>">
+                    <input type="hidden" value="<?php echo $field2name  ?>">
                     </form>
                   </td>
               </tr>';
