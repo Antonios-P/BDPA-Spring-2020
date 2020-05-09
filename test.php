@@ -76,11 +76,7 @@
         
     $gameid = $gameidhold["GameId"];
     
-    echo '<br />';
-    
-    echo $gameid;
-
-    $numberofquestions = 5;
+    $numberofquestions = 2;
     
     $answerid = 1;
 
@@ -99,9 +95,17 @@
         };
 
     };
-    
-    echo '<br />';
-    
-    print_r($questionid);
+
+    //numberofquestions = POST_whatever_you_named_it
+
+    //create player (person who made the game)
+
+    //name = POST_whatever_you_named_it_2
+
+    $insert1 = "INSERT INTO `Players`(`Name`) VALUES ('$name')";
+
+    $statement3 = $db -> prepare($insert1);
+                
+    $statement3 -> execute();
 
 ?>
