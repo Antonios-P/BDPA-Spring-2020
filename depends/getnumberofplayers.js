@@ -9,7 +9,7 @@ function ajaxcall() {
     };
     xhttp.open("POST", "/depends/lobby.php", true);
     xhttp.send();
-    setTimeout(ajaxcall, 1000)
+    setTimeout(ajaxcall, 3000) // 3 seconds for debugging reasons. Will be one second or less in release
   }
 
 ajaxcall() //calls the function that gets the number of players
