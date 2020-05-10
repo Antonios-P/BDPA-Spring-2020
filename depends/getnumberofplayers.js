@@ -7,7 +7,7 @@ function ajaxcall() {
         /// set this numberofplayers variable in element where you want to display numberofplayers
     }
     };
-    xhttp.open("POST", "/depends/lobby.php", true);
+    xhttp.open("POST", "getplayers.php", true);
     xhttp.send();
     setTimeout(ajaxcall, 3000) // 3 seconds for debugging reasons. Will be one second or less in release
   }
