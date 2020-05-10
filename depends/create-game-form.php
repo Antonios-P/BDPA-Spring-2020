@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="https://bdpastudents.com/~team2/spring2020/BDPA-Spring-2020/style.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
 
 <?php 
 echo '
