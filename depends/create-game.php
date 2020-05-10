@@ -71,5 +71,5 @@
     $statement5 -> execute();
 
     //redirect the user to the lobby
-    header('Location: lobby.php')
+    header('Location: ../lobby.php')
 ?>
