@@ -1,4 +1,4 @@
-function ajaxcall() { 
+function getnumberofplayers() { 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -12,4 +12,5 @@ function ajaxcall() {
     setTimeout(ajaxcall, 3000) // 3 seconds for debugging reasons. Will be one second or less in release
   }
 
-ajaxcall() //calls the function that gets the number of players
+getnumberofplayers() //calls the function that gets the number of players
+document.write(numberofplayers)

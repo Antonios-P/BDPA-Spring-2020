@@ -11,6 +11,6 @@ $players->execute($placeholders);
 
 $numberofplayers = $players->rowCount();
 
-echo '<script src="depends/getnumberofplayers.js"></script>'
+echo 'Number of currently online players: <script src="depends/getnumberofplayers.js"></script>'
 
 ?>
