@@ -2,7 +2,7 @@
 
     session_start();
     
-    require 'db.php';
+    require 'depends/db.php';
     
     $gamecode = $_SESSION['gamecode'];
 
@@ -60,6 +60,8 @@
     
     echo 'GAME ID DISPLAY AND PLAYER ID DISPLAY ARE TEMP FOR TESTING';
     
+    require 'depends/getplayers.php';
+    
     echo '<br>';
             
     echo '<center>';
@@ -87,7 +89,5 @@
     echo '</center>';
     
     echo $gameid;
-
-?>
 
 ?>

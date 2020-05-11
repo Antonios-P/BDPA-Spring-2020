@@ -1,6 +1,6 @@
 <?php 
 
-require 'depends/db.php';
+require 'db.php';
 
 //query from the database
 $players = $db -> prepare("SELECT * FROM GamePLayers WHERE GameID = ?");
@@ -11,6 +11,6 @@ $players->execute($placeholders);
 
 $numberofplayers = $players->rowCount();
 
-echo 'Number of currently online players: <script src="depends/getnumberofplayers.js"></script>'
+echo 'Number of currently online players: <script src="getnumberofplayers.js"></script>'
 
 ?>
