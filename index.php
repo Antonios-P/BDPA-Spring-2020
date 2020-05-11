@@ -9,7 +9,7 @@
         <br>
 
         <a class="button-blue" align="center" href="all-games.php">Browse All Games</a>
-        <a class="button-green" align="center" href="depends/create-game.php">Create a Game</a>
+        <a class="button-green" align="center" href="depends/create-game-form.php">Create a Game</a>
     </div>
 </body>
 
