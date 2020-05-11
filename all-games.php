@@ -36,8 +36,5 @@ echo '<table style="color: white;" class="games" align="center" width=auto borde
               </tr>';
 
     }
- 
-    /* free result set */
-    $result->closeCursor();
 
 ?>
