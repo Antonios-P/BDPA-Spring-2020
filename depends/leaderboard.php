@@ -3,9 +3,7 @@
 <?php 
 require 'db.php';
 
-$i = 1;
-
-$score = $db -> prepare("SELECT PlayerScore FROM GamePlayers ORDER BY PlayerScore DESC LIMIT 5");
+$score = $db -> prepare("SELECT * FROM GamePlayers ORDER BY PlayerScore DESC LIMIT 5");
 $score -> execute();
 
 echo '<div id="container">';
@@ -20,17 +18,12 @@ echo '<div class="row">';
 echo '</div>';
 
 while ($row = $score->fetch(PDO::FETCH_ASSOC)) {
-    $field1name = $row["PlayerScore"];
+    $score = $row["PlayerScore"];
+    $player = ""/*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/ */;
 
-    echo '<div class="row">';
-    echo '<tr> 
-            <td>'.$i.'</td>
-            <td>'.$field1name.'</td>
-          </tr>';
-
-    echo '</div>';
-
-    $i++;
+   echo '<div class="row">
+            <div class="name">'.$player.'</div><div class="score">'.$score.'</div>
+         </div>';
 }
 
 echo '</div>';
