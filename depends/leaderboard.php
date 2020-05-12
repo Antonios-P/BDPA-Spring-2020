@@ -3,8 +3,13 @@
 <?php 
 require 'db.php';
 
-$score = $db -> prepare("SELECT * FROM GamePlayers ORDER BY PlayerScore DESC LIMIT 5");
+//Get the top 5 players' score
+$score = $db -> prepare("SELECT * FROM GamePlayers ORDER BY PlayerScore DESC LIMIT 5"); //This will select players from all the games. gameID will need to be used to only show players from current game.
 $score -> execute();
+
+//Get the top 5 players' display names
+$player = $db -> prepare("SELECT Name FROM Players LEFT JOIN GamePlayers ON Players.PlayerId=GamePlayers.PlayerId ORDER BY PlayerScore DESC LIMIT 5"); /*The players still will get queried for every game regardless of the current game. The gameID will need to be used to only show the players from the currrent game.*/
+$player->execute();
 
 echo '<div id="container">';
 
@@ -17,9 +22,9 @@ echo '<div class="row">';
       </tr>';
 echo '</div>';
 
-while ($row = $score->fetch(PDO::FETCH_ASSOC)) {
-    $score = $row["PlayerScore"];
-    $player = ""/*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/;
+while ($rowScore = $score->fetch(PDO::FETCH_ASSOC) and $rowPlayer = $player->fetch(PDO::FETCH_ASSOC)) {
+    $score = $rowScore["PlayerScore"];
+    $player = $rowPlayer["Name"]; /*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/;
 
    echo '<div class="row">
             <div class="name">'.$player.'</div><div class="score">'.$score.'</div>
