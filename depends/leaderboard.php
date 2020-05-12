@@ -4,8 +4,11 @@
 require 'db.php';
 
 //Get the top 5 players' score
-$score = $db -> prepare("SELECT * FROM GamePlayers ORDER BY PlayerScore DESC LIMIT 5"); //This will select players from all the games. gameID will need to be used to only show players from current game.
-$score -> execute();
+$score = $db -> prepare("SELECT * FROM GamePlayers WHERE GameId = ? ORDER BY PlayerScore DESC LIMIT 5"); //This will select players from all the games. gameID will need to be used to only show players from current game.
+$placeholders = [
+    $_SESSION['GameId']
+];
+$score -> execute($placeholders);
 
 //Get the top 5 players' display names
 $player = $db -> prepare("SELECT Name FROM Players LEFT JOIN GamePlayers ON Players.PlayerId=GamePlayers.PlayerId ORDER BY PlayerScore DESC LIMIT 5"); /*The players still will get queried for every game regardless of the current game. The gameID will need to be used to only show the players from the currrent game.*/
