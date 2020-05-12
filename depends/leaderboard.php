@@ -19,7 +19,7 @@ echo '</div>';
 
 while ($row = $score->fetch(PDO::FETCH_ASSOC)) {
     $score = $row["PlayerScore"];
-    $player = ""/*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/ */;
+    $player = ""/*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/;
 
    echo '<div class="row">
             <div class="name">'.$player.'</div><div class="score">'.$score.'</div>
