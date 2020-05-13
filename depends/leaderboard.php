@@ -11,8 +11,11 @@ $placeholders = [
 $score -> execute($placeholders);
 
 //Get the top 5 players' display names
-$player = $db -> prepare("SELECT Name FROM Players LEFT JOIN GamePlayers ON Players.PlayerId=GamePlayers.PlayerId ORDER BY PlayerScore DESC LIMIT 5"); /*The players still will get queried for every game regardless of the current game. The gameID will need to be used to only show the players from the currrent game.*/
-$player->execute();
+$player = $db -> prepare("SELECT Name FROM Players LEFT JOIN GamePlayers ON Players.PlayerId = GamePlayers.PlayerId AND GamePlayers.GameId = ? ORDER BY PlayerScore DESC LIMIT 5"); /*This will query only the players that are in a specific game.*/
+$placeholders = [
+    $_SESSION['GameId']
+];
+$player->execute($placeholders);
 
 echo '<div id="container">';
 
