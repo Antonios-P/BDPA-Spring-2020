@@ -20,7 +20,7 @@ $player->execute($placeholders);
 echo '<div id="container">';
 
 echo '<table style="color: white;" class="games" align="center" width=auto border="0" cellspacing="2" cellpadding="2">'; 
-echo '<div class="row">';
+echo '<div class="leaderboard">';
     echo '
       <tr> 
           <th> <font face="Arial">Place</font> </th>
@@ -32,7 +32,7 @@ while ($rowScore = $score->fetch(PDO::FETCH_ASSOC) and $rowPlayer = $player->fet
     $score = $rowScore["PlayerScore"];
     $player = $rowPlayer["Name"]; /*The player name goes inside the quotes. This will have to be queried in accordance with the player ID that is in the game. A join (OUTER or INNER) will most likely have to be performed to get that data.*/;
 
-   echo '<div class="row">
+   echo '<div class="leaderboard">
             <div class="name">'.$player.'</div><div class="score">'.$score.'</div>
          </div>';
 }

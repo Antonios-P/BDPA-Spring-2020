@@ -254,7 +254,7 @@ color: white;
   height: auto;
 }
 
-.row {
+.leaderboard {
   position: relative;
   display: block;
   width: 100%;
@@ -275,14 +275,14 @@ color: white;
   width: 25%;
 }
 
-.row:nth-child(1) {
+.leaderboard:nth-child(1) {
   background: gold;
 }
 
-.row:nth-child(2) {
+.leaderboard:nth-child(2) {
   background: #c0c0c0;
 }
 
-.row:nth-child(3) {
+.leaderboard:nth-child(3) {
   background: #cd7f32;
 }
