@@ -50,20 +50,62 @@
 
     */
 
-    $datasource = 'mysql:host=localhost;dbname=team2_trivia';
+    $username = 'team2_2';
     
-    $dusername = 'team2_2';
+    $password = 'TPH5zOSt]&oY';
     
-    $dpassword = 'TPH5zOSt]&oY';
-            
-    $pdo = new PDO($datasource, $dusername, $dpassword);
-
+    $db = new PDO('mysql:host=localhost;dbname=team2_trivia', $username, $password);
+    
     $gamecode = uniqid();
 
     $insert = "INSERT INTO `Games` (`GameCode`) VALUES ('$gamecode')";
 
-    $statement = $pdo -> prepare($insert);
+    $statement = $db -> prepare($insert);
                 
     $statement -> execute();
+    
+    echo $gamecode;
+    
+    $query = "SELECT `GameId` FROM `Games` WHERE `GameCode` = '$gamecode'";
+    
+    $statement1 = $db -> prepare($query);
+                
+    $statement1 -> execute();
+    
+    $gameidhold = $statement1 -> fetch(PDO::FETCH_ASSOC);
+        
+    $gameid = $gameidhold["GameId"];
+    
+    $numberofquestions = 2;
+    
+    $answerid = 1;
+
+    for ($i = 1; $i <= $numberofquestions; $i++){
+        
+        for ($ii = 1; $ii <= 4; $ii++) {
+            
+            $query1 ="INSERT INTO `GameAnswers` (GameId, QuestionId, AnswerId) VALUES ('". $gameid ."', '". $i ."', '". $answerid ."')";
+        
+            $statement2 = $db -> prepare($query1);
+                
+            $statement2 -> execute();
+            
+            $answerid++;
+            
+        };
+
+    };
+
+    //numberofquestions = POST_whatever_you_named_it
+
+    //create player (person who made the game)
+
+    //name = POST_whatever_you_named_it_2
+
+    $insert1 = "INSERT INTO `Players`(`Name`) VALUES ('$name')";
+
+    $statement3 = $db -> prepare($insert1);
+                
+    $statement3 -> execute();
 
 ?>
